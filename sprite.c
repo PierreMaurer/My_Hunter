@@ -12,10 +12,18 @@
 void display_sprite(sfRenderWindow *window)
 {
     sfIntRect rect;
+    rect.top = 0;
+    rect.left = 0;
+    rect.width = 110;
+    rect.height = 110;
+    sfVector2f vector = {500, 50};
     sfSprite *my_sprite = sfSprite_create();
     sfTexture *my_texture = sfTexture_createFromFile("ressources/sprite.png", NULL);
     sfSprite_setTexture(my_sprite, my_texture, sfFalse);
+    sfSprite_setTextureRect(my_sprite, rect);
+    sfSprite_setPosition(my_sprite, vector);
     sfRenderWindow_drawSprite(window, my_sprite, NULL);
+
     /*
     sfClock *clock;
     sfTime time;
