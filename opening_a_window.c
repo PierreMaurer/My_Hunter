@@ -13,10 +13,16 @@ void close_func(sfRenderWindow *window, sfEvent event) {
     }
 }
 
-int main(void)
+int main(int argc, char **argv)
 {
+    if (argc > 1) {
+        if (argv[1][0] == '-' && argv[1][1] == 'h') {
+            printf("Help menu");
+            return 0;
+        }
+    }
     sfRenderWindow *window;
-    sfVideoMode video_mode = {800, 600, 32};
+    sfVideoMode video_mode = {1920, 1080, 32};
     sfEvent event;
 
     window = sfRenderWindow_create(video_mode, NULL, sfClose, NULL);

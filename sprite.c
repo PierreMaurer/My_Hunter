@@ -16,6 +16,7 @@ void display_sprite(sfRenderWindow *window)
     sfTexture *my_texture = sfTexture_createFromFile("ressources/sprite.png", NULL);
     sfSprite_setTexture(my_sprite, my_texture, sfFalse);
     sfRenderWindow_drawSprite(window, my_sprite, NULL);
+    /*
     sfClock *clock;
     sfTime time;
     float seconds;
@@ -23,12 +24,12 @@ void display_sprite(sfRenderWindow *window)
     while (sfRenderWindow_isOpen(window))
     {
         time = sfClock_getElapsedTime(clock);
-        seconds = time.microseconds;
-        printf("%f", seconds);
+        seconds = time.microseconds/1000000.0;
         if (seconds > 1.0)
         {
             printf("One more second elapsed...");
             sfClock_restart(clock);
         }
     }
+     */
 }
