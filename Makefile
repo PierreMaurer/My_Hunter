@@ -8,6 +8,7 @@
 SRC =	./opening_a_window.c        \
 		./sprite.c        \
 		./click_mouse_event.c		\
+		./src/fire_entities.c
 
 OBJ =    $(SRC:.c=.o)
 

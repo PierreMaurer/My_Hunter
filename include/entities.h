@@ -18,4 +18,7 @@ typedef struct entities_fire_s {
     sfTexture *texture;
     sfSprite *sprite;
 } entities_t;
+
+entities_t createFireEntities(int entities_id);
+sfIntRect create_my_rect(int x, int y);
 #endif //ENTITIES_H
