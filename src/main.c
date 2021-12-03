@@ -7,13 +7,10 @@
 
 #include <SFML/Graphics.h>
 #include "../includes/general.h"
-#define WIDTH 1920
-#define HEIGHT 1080
 
 int main (int argc, char **argv)
 {
-    if (argc > 1 && argv[1][0] == '-' && argv[1][1] == 'h')
-    {
+    if (argc > 1 && argv[1][0] == '-' && argv[1][1] == 'h') {
         my_putstr("Help \n");
         my_putstr("Shoot the fire ball to win \n");
     } else {

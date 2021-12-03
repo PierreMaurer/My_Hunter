@@ -26,4 +26,3 @@ gameloop_t shoot_entities(sfEvent event, gameloop_t gameloop)
     }
     return gameloop;
 }
-

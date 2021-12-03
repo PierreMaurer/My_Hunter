@@ -11,11 +11,9 @@ general_t *init_general(void)
 {
     general_t *general_data = malloc(sizeof(general_t));
     sfVideoMode mode = { 1920, 1080, 32};
-
     general_data->window = sfRenderWindow_create(mode, "FireHunter"
     , sfDefaultStyle, NULL);
     sfRenderWindow_setMouseCursorVisible(general_data->window, sfFalse);
     return general_data;
 }
-
 

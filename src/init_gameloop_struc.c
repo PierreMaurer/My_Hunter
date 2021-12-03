@@ -64,7 +64,8 @@ gameloop_t game_init_last(gameloop_t gameloop)
     sfSprite_setTexture(gameloop.background
     , gameloop.background_texture, sfTrue);
     sfSprite_setPosition(gameloop.fire_sprite, gameloop.fire_entities_pos);
-    sfSprite_setTexture(gameloop.fire_sprite, gameloop.fire_entities_1, sfTrue);
+    sfSprite_setTexture(gameloop.fire_sprite,
+                        gameloop.fire_entities_1, sfTrue);
     sfSprite_setScale(gameloop.fire_sprite, gameloop.scale);
     gameloop.aim_pointer = sfSprite_create();
     gameloop.aim_pointer_texture = sfTexture_createFromFile(

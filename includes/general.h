@@ -25,7 +25,6 @@ typedef struct entities_s {
     sfSprite *entities_sprites;
 } entities_t;
 
-
 typedef struct general_s {
     sfRenderWindow *window;
     score_t *score;

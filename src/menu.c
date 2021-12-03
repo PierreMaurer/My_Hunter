@@ -15,7 +15,6 @@ int start_menu(void)
     sfRenderWindow* window;
     window = sfRenderWindow_create(mode_video, "FireHunter"
     , sfDefaultStyle, NULL);
-
     while (sfRenderWindow_isOpen(window)) {
         sfEvent event;
         while (sfRenderWindow_pollEvent(window, &event))
