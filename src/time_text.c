@@ -29,6 +29,7 @@ gameloop_t animate_sprite(gameloop_t gameloop)
         , gameloop.fire_entities_6, sfTrue);
     if (gameloop.seconds == 6)
         gameloop.seconds = 0;
+    gameloop.seconds = (gameloop.seconds == 6) ? 0 : gameloop.seconds;
     gameloop.seconds++;
     return gameloop;
 }
