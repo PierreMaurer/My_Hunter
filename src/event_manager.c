@@ -28,7 +28,8 @@ void event_manager__end_menu(sfRenderWindow *window, sfEvent event)
         gameloop(window);
 }
 
-gameloop_t event_manager_game(sfRenderWindow *window, sfEvent event, gameloop_t gameloop_s)
+gameloop_t event_manager_game(sfRenderWindow *window, sfEvent event
+, gameloop_t gameloop_s)
 {
     if (event.type == sfEvtClosed)
         sfRenderWindow_close(window);

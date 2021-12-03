@@ -14,9 +14,6 @@
 #include "menu.h"
 #include "gameloop.h"
 
-#define WIDTH 1920
-#define HEIGHT 1080
-
 typedef struct score_s {
     int score;
     int best_score;

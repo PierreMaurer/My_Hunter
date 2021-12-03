@@ -14,8 +14,6 @@ int end_menu(sfRenderWindow *window)
 
     sfRenderWindow_setFramerateLimit(window, 60);
     while (sfRenderWindow_isOpen(window)) {
-        main.fire_entities_pos.x += 0;
-        sfSprite_setPosition(main.fire_sprite, main.fire_entities_pos);
         sfEvent event;
         while (sfRenderWindow_pollEvent(window, &event)) {
             event_manager__end_menu(window, event);

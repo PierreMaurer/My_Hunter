@@ -15,14 +15,7 @@
 typedef struct menu_s {
     sfRenderWindow *window;
     sfTime *time;
-    sfSprite *fire_sprite;
     sfTexture *background_texture;
-    sfTexture *fire_entities_1;
-    sfTexture *fire_entities_2;
-    sfTexture *fire_entities_3;
-    sfTexture *fire_entities_4;
-    sfTexture *fire_entities_5;
-    sfTexture *fire_entities_6;
     sfSprite *background;
     sfText *header;
     sfText *footer;

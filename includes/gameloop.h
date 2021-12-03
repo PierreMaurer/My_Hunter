@@ -16,12 +16,6 @@
 typedef struct gameloop_s {
     sfRenderWindow *window;
     sfTime *time;
-    /*
-    int *seconds= 0;
-    int *speed = 10;
-    int *life = 3;
-    int *score = 0;
-     */
     int seconds;
     float speed;
     int life;
@@ -62,6 +56,8 @@ gameloop_t animate_sprite(gameloop_t gameloop);
 gameloop_t update_entities_out(gameloop_t gameloop);
 gameloop_t update_entities_shooted(gameloop_t gameloop);
 gameloop_t game_init_last(gameloop_t gameloop);
-gameloop_t event_manager_game(sfRenderWindow *window, sfEvent event, gameloop_t gameloop_s);
+gameloop_t event_manager_game(sfRenderWindow *window, sfEvent event
+, gameloop_t gameloop_s);
 gameloop_t aim_pointer(gameloop_t gameloop, sfMouseMoveEvent event);
+gameloop_t texte_init(gameloop_t gameloop);
 #endif //PROJETHUNTERTEST_GAMELOOP_H
