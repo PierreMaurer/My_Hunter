@@ -12,6 +12,7 @@ menu_t destruct_menu(menu_t main, sfRenderWindow *window)
     sfTexture_destroy(main.background_texture);
     sfSprite_destroy(main.background);
     sfText_destroy(main.header);
+    sfMusic_destroy(main.music);
     sfText_destroy(main.footer);
     sfRenderWindow_destroy(window);
 }
