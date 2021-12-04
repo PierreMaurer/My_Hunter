@@ -16,4 +16,3 @@ general_t *init_general(void)
     sfRenderWindow_setMouseCursorVisible(general_data->window, sfFalse);
     return general_data;
 }
-

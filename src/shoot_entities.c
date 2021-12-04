@@ -11,16 +11,16 @@ gameloop_t shoot_entities(sfEvent event, gameloop_t gameloop)
 {
     sfVector2f print = sfSprite_getPosition(gameloop.fire_sprite);
 
-    if (event.mouseButton.x >= print.x 
+    if (event.mouseButton.x >= print.x
     && event.mouseButton.x <= print.x + 600) {
-        if (event.mouseButton.y >= print.y 
+        if (event.mouseButton.y >= print.y
         && event.mouseButton.y <= print.y + 197) {
             gameloop.score++;
             gameloop.speed++;
             gameloop.fire_entities_pos.x = 1925;
             gameloop.fire_entities_pos.y = rand() % 500;
             sfSprite_setPosition(gameloop.fire_sprite,
-             gameloop.fire_entities_pos);
+                                 gameloop.fire_entities_pos);
             sfText_setString(gameloop.score_nb, convert_i_c(gameloop.score));
         }
     }

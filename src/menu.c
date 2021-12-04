@@ -5,7 +5,6 @@
 ** My_Hunter.c
 */
 
-
 #include "../includes/general.h"
 
 int start_menu(void)
