@@ -17,9 +17,10 @@ menu_t init_menu(void)
     main.footer_pos.y = 500;
     main.scale.x = 1;
     main.scale.y = 1;
+    main.music = sfMusic_createFromFile("ressources/music.ogg");
     main.background_texture = sfTexture_createFromFile(
         "ressources/background.png", NULL);
-    main.font = sfFont_createFromFile("ressources/FIREBOMB.TTF");
+    main.font = sfFont_createFromFile("ressources/font.ttf");
     main = init_text_menu(main);
     return main;
 }
@@ -53,7 +54,7 @@ menu_t init_end_menu(void)
     main.scale.y = 1;
     main.background_texture = sfTexture_createFromFile(
         "ressources/background.png", NULL);
-    main.font = sfFont_createFromFile("ressources/FIREBOMB.TTF");
+    main.font = sfFont_createFromFile("ressources/font.ttf");
     main = init_text_end_menu(main);
     return main;
 }

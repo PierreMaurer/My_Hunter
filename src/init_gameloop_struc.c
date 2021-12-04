@@ -43,7 +43,7 @@ gameloop_t game_loop_init_text(gameloop_t gameloop)
     gameloop.fire_entities_6 = sfTexture_createFromFile(
             "ressources/fire_ball_6.png", NULL);
     gameloop.font = sfFont_createFromFile(
-            "ressources/FIREBOMB.TTF");
+            "ressources/font.ttf");
     gameloop.score_text = sfText_create();
     sfText_setString(gameloop.score_text, "Score : ");
     sfText_setPosition(gameloop.score_text, gameloop.score_text_pos);

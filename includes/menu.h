@@ -10,6 +10,7 @@
 
 #include "general.h"
 #include <SFML/Graphics.h>
+#include <SFML/Audio.h>
 #include <stdio.h>
 #include "stdlib.h"
 typedef struct menu_s {
@@ -24,6 +25,7 @@ typedef struct menu_s {
     sfVector2f fire_entities_pos;
     sfVector2f scale;
     sfFont *font;
+    sfMusic *music;
 } menu_t;
 int start_menu(void);
 menu_t init_menu(void);

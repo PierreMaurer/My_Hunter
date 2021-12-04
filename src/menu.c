@@ -13,6 +13,7 @@ int start_menu(void)
     menu_t main = init_menu();
     sfVideoMode mode_video = {1920, 1080, 32};
     sfRenderWindow* window;
+    sfMusic_play(main.music);
     window = sfRenderWindow_create(mode_video, "FireHunter"
     , sfDefaultStyle, NULL);
     while (sfRenderWindow_isOpen(window)) {

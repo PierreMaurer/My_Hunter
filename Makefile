@@ -22,7 +22,7 @@ SRC =	./src/main.c        \
 
 OBJ =    $(SRC:.c=.o)
 
-LIB = -lcsfml-graphics -lcsfml-window -lcsfml-system -I ../include/ -L ./lib/ -lmy -g
+LIB = -lcsfml-graphics -lcsfml-window -lcsfml-system -lcsfml-audio -I ../include/ -L ./lib/ -lmy -g
 
 NAME =	wind
 

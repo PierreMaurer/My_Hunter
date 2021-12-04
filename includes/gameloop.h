@@ -10,6 +10,7 @@
 
 #include "general.h"
 #include <SFML/Graphics.h>
+#include <SFML/Audio.h>
 #include <stdio.h>
 #include "stdlib.h"
 #include "my.h"

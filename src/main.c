@@ -12,7 +12,8 @@ int main (int argc, char **argv)
 {
     if (argc > 1 && argv[1][0] == '-' && argv[1][1] == 'h') {
         my_putstr("Help \n");
-        my_putstr("Shoot the fire ball to win \n");
+        my_putstr("Shoot the maximum of fire ball to win \n");
+        return 0;
     } else {
         start_menu();
     }

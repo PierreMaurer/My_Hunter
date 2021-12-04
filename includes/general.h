@@ -13,6 +13,7 @@
 #include "my.h"
 #include "menu.h"
 #include "gameloop.h"
+#include <SFML/Audio.h>
 
 typedef struct score_s {
     int score;
