@@ -19,8 +19,8 @@ gameloop_t shoot_entities(sfEvent event, gameloop_t gameloop)
             gameloop.speed++;
             gameloop.fire_entities_pos.x = 1925;
             gameloop.fire_entities_pos.y = rand() % 500;
-            sfSprite_setPosition(gameloop.fire_sprite,
-                                 gameloop.fire_entities_pos);
+            sfSprite_setPosition(gameloop.fire_sprite
+            ,gameloop.fire_entities_pos);
             sfText_setString(gameloop.score_nb, convert_i_c(gameloop.score));
         }
     }
