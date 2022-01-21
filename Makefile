@@ -24,7 +24,7 @@ OBJ =    $(SRC:.c=.o)
 
 LIB = -lcsfml-graphics -lcsfml-window -lcsfml-system -lcsfml-audio -I ../include/ -L ./lib/ -lmy -g
 
-NAME =	wind
+NAME =	my_hunter
 
 all:	$(NAME)
 
